@@ -17,40 +17,40 @@
   <script src="https://unpkg.com/scrollreveal"></script>
   
 <head>
-<title> buat Kamu</title>
+<title>Script HTML buat Kamu</title>
 </head>
 <body>
 	
    <div class="overlay">
-     <!orang tersayang-- Teks Loading --><div class="loading-message">Hai kamu!<br>Tunggu dulu ya..</div>
+     <!-- Teks Loading --><div class="loading-message">Hai kamu!<br>Tunggu dulu ya..</div>
    </div>
    
    <!-- Ganti Audio di Sini, edit url di dalam src -->
    <audio src="https://feeldreams.github.io/maukahkamu/seandainya.mp3" id="linkmp3" class="sembunyi"></audio>
    
-   haii Cintakuu Ada kata buat kamu nih 
+   <!-- Pesan Pertama -->
    <section class="first">
        <!-- Background --><div class="wp"><img id="imgsatu" src="https://feeldreams.github.io/maukahkamu/wpsatu.jpg"/></div>
        <!-- Stiker --><img id="first_stiker" class="stiker fade-in" src="https://feeldreams.github.io/bunga.gif"/>
        
-       <h1 class="title">Buat kamu pacarkuuu</h1>
-       <p class="flip">Makasih udah selalu ada buat aku yahh sayang jujur baru kali ini ada yang sayang banget sama aku bahkan sampe ga mau kehilangan.....Semoga selamanya selalu ginii yahh sayang aminnnn </p>
-       <p class="slide-up">Aku Deden Supriatna Menyatakan bahwa aku sangatt menyayangi orang yang bernama rima</p>
+       <h1 class="title">Pesan Judul</h1>
+       <p class="flip">Pesan Deskripsi</p>
+       <p class="slide-up">Pesan Tambahan</p>
   </section>
   
-  <!--Rencana kita -->
+  <!-- Pesan Kedua -->
   <section>
       <!-- Background --><div class="wp"><img id="imgdua" src="https://feeldreams.github.io/maukahkamu/wpdua.jpg"/></div>
       <!-- Stiker --><img class="stiker fade-in" src="https://feeldreams.github.io/pusn.gif"/>
       
-      <h2 class="title">Aduhh maaf aku lagi kangen banget nih</h2>
-      <p class="slide-right">Jangan lupa yahh sayang nanti kita main bebas mau main kemana aja asalkan sama kamu</p>
+      <h2 class="title">Pesan Judul</h2>
+      <p class="slide-right">Pesan Deskripsi</p>
   </section>
   
   <!-- Pesan Ketiga dengan Animasi Ngetik -->
   <section>
   	<!-- Background --><div class="wp"><img id="imgtiga" src="https://feeldreams.github.io/maukahkamu/wptiga.jpg"/></div>
-      <p id="teksnimasi"> I LOVE YOUUUUUUUUUU KEKASIH CANTIKKKUU</p>
+      <p id="teksnimasi">Pesan Teks Animasi Ngetik</p>
   </section>
   
   <!-- Pesan Keempat dengan Pertanyaan -->
@@ -58,12 +58,12 @@
   	<!-- Background --><div class="wp"><img id="imgempat" src="https://feeldreams.github.io/maukahkamu/wpempat.jpg"/></div>
       <!-- Stiker --><img class="stiker fade-in" src="https://feeldreams.github.io/bunga.gif"/>
       
-      <h2 class="title">Jawab Aja yahh sayang</h2>
-      <p class="bold slide-right">Kamu sayang aku kann??</p>
+      <h2 class="title">Pesan Judul</h2>
+      <p class="bold slide-right">Pesan Pertanyaan</p>
       
       <div id="Tombol">
-       <a id="By" onClick="fungsipertama()">Cuman sayang ajaa</a>
-       <a id="Bn" onClick="fungsikedua()">Sayang banget banget banget</a>
+       <a id="By" onClick="fungsipertama()">Tombol Fungsi Pertama</a>
+       <a id="Bn" onClick="fungsikedua()">Tombol Fungsi Kedua</a>
      </div>
   </section>
   
@@ -73,10 +73,10 @@
       <!-- Stiker --><img id="stikerakhir" class="stiker fade-in" src="https://feeldreams.github.io/g5.gif"/>
       
       <img id="stikerakhir2" style="display:none" src="https://feeldreams.github.io/emawh.gif"/>
-      <h1 id="judulakhir">R&D</h1>
-      <p id="kalimatakhir">Kita buat kisah kita yang paling menarik</p>
-      <p id="palingakhir">sampai banyak orang yang iri sama kita</p>
-      <div id="TombolWA">08817848619
+      <h1 id="judulakhir"></h1>
+      <p id="kalimatakhir"></p>
+      <p id="palingakhir"></p>
+      <div id="TombolWA">
         <a onClick="menuju()">Balas </a>
       </div>
   </section>
@@ -89,25 +89,25 @@
 
 <script>
 // Teks ketika klik tombol Mau
-function fungsipertama(Bikinbahagia){
-       fungsi=1;tes(bahagia);
-       teksjudulakhir = "Aku selalu sayang kamu";
-       tekskalimatakhir = "Akan aku perjuangkan kamu selamanya";
+function fungsipertama(){
+       fungsi=0;tes();
+       teksjudulakhir = "";
+       tekskalimatakhir = "";
 }
 
 // Teks ketika klik tombol Gamau
-function fungsikedua(){ galau
-       fungsi=1;tes(Sedih);
-       teksjudulakhir = "Jadikan aku menjadi Pacar yang kamu mau yahh sayang";
-       tekskalimatakhir = "Biar kita bersama selamanyaaa";
+function fungsikedua(){
+       fungsi=0;tes();
+       teksjudulakhir = "";
+       tekskalimatakhir = "";
 }
 
 // Teks Akhir
-teksjudulakhir2 = "terakhir dari aku sayang";
-tekspalingakhir = "jaga diri baik-baik dan jaga perasaan kamu saat kita jauh yaaa:)";
+teksjudulakhir2 = "";
+tekspalingakhir = "";
   
 // Teks yang akan dikirim ke WhatsApp
-pesanwhatsapp = "Aku,Kamu, dan cinta kita akan bersema selamanya";
+pesanwhatsapp = "";
 
 const body = document.querySelector("body"); initom.style="opacity:0;bottom:0;transition:none"; audio = new Audio('' + linkmp3.src); function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
 </script>
